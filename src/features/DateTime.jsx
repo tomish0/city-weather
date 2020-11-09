@@ -5,6 +5,7 @@ function DateTime(props) {
 
   const [time, setTime] = useState("");
 
+  // function to calculate the local time with the timezone
   function calcTime(offset) {
     var d = new Date();
     // convert to msec
@@ -18,6 +19,7 @@ function DateTime(props) {
     return nd.toLocaleString();
   }
 
+  // update the time for each city real time
   useEffect(() => {
     var interval = setInterval(function () {
       setTime(calcTime(timezone));

@@ -4,6 +4,7 @@ import EachCity from "./EachCity";
 function CityList(props) {
   const { selectedCities, setSelectedCities } = props;
 
+  // function to remove city from the state & local storage on click
   const removeCity = (index) => {
     var newStateArray = [
       ...selectedCities.slice(0, index),

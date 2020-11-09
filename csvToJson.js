@@ -63,6 +63,8 @@ csv()
       z,
     ];
 
+    // loop through the data & use an array of the alphabet letters to add 
+    // each city to the array for the associated letter
     jsonObj.forEach((item) => {
       letters.forEach((letter, index) => {
         if (item.city.charAt(0).toLowerCase() === letter) {
@@ -71,6 +73,7 @@ csv()
       });
     });
 
+    // for each array in the full alphabet array create a file with the data
     alphabet.forEach((item, index) => {
       var data = JSON.stringify(item);
 
