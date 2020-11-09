@@ -1,0 +1,28 @@
+.each-city-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+  .info-container {
+    margin-right: 15px;
+    .title,
+    .temp,
+    .humidity,
+    .time {
+      span {
+        font-weight: bold;
+      }
+    }
+    .time {
+      display: flex;
+      span {
+        margin-right: 4px;
+      }
+    }
+  }
+  button {
+    height: max-content;
+    cursor: pointer;
+  }
+}
