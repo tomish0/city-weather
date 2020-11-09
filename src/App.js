@@ -7,6 +7,8 @@ import "./App.css";
 function App() {
   // The application is structured to use city data 
   // downloaded & converted from worldcities.csv with csvToJson.js.
+  // Chose this city data over other sources (including weather api's own selection) 
+  // because there are fewer selections that aren't actually cities, rather towns etc.
   // With this city data, make api requests to api.openweathermap.org with the 
   // latitude and longtitude acquired from selecting chosen city object.
   // Uses localStorage to retrieve & add to your city list.
